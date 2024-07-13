@@ -1,0 +1,192 @@
+.primeraImagen {
+  height: 30%;
+  & a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .imagenHeader {
+    width: 30%;
+    height: 100%;
+  }
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  border-bottom: 1px gray solid;
+  & .logoYTitulo {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    & a {
+      align-self: center;
+      text-decoration: none;
+      color: black;
+      font-size: 20px;
+      font-weight: 800;
+      &:hover {
+        color: red;
+      }
+    }
+  }
+  & .enlacesPrincipales {
+    width: 80%;
+    & .menuDeEnlaces {
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      & a {
+        padding-top: 0.5%;
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        height: 100%;
+        border-left: 1px black solid;
+        &:hover {
+          color: red;
+        }
+        & li {
+          align-self: center;
+          & img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+main {
+  & .noticias {
+    margin-left: 12%;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    width: 75%;
+    column-gap: 20px;
+    row-gap: 10px;
+    justify-items: center;
+    & .noticia {
+      box-shadow: 1px 1px gray;
+      border-radius: 10px;
+      & img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+    & #noticiaUno {
+      background-color: red;
+    }
+    & #noticiaDos {
+      background-color: gray;
+    }
+    & #noticiaTres {
+      background-color: blue;
+      width: 100%;
+      height: 80%;
+      & img {
+        height: 60%;
+      }
+    }
+    & #noticiaCuatro {
+      background-color: rgb(144, 0, 255);
+      width: 100%;
+      height: 80%;
+      & img {
+        height: 60%;
+      }
+    }
+    & h3 {
+      font-weight: 600;
+      color: white;
+    }
+  }
+  & h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  & h2 {
+    font-weight: 700;
+  }
+  & .filaDeProductos {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    & .producto {
+      width: 20rem;
+      height: 22rem;
+      box-shadow: 1px 1px 5px 0px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        width: 12rem;
+        height: 12rem;
+      }
+      & p {
+        font-weight: 590;
+      }
+      & .precioAnterior {
+        text-decoration: line-through;
+      }
+      & button {
+        border-radius: 10px;
+        border: none;
+        height: 2.5rem;
+        width: 10rem;
+        color: white;
+        background-color: rgb(0, 172, 0);
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: white;
+          color: rgb(0, 172, 0);
+          border: 1px solid rgb(0, 172, 0);
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 30%;
+  margin-top: 3rem;
+  background-color: red;
+  & .enlacesSecundarios {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & ul {
+      font-size: 20px;
+      & h3 {
+        font-weight: 600;
+        color: white;
+      }
+      & a {
+        &:hover {
+          color: black;
+        }
+      }
+      & li {
+        color: white;
+      }
+    }
+  }
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
