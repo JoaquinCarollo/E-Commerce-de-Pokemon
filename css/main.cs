@@ -1,13 +1,26 @@
+body {
+  background-color: black;
+}
+
+.primeraImagen {
+  height: 30%;
+}
+.primeraImagen a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.primeraImagen .imagenHeader {
+  width: 30%;
+  height: 100%;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
   list-style: none;
-}
-
-.subTitulo {
-  text-align: center;
-  font-size: 25px;
 }
 
 header {
@@ -16,54 +29,23 @@ header {
   display: flex;
   border-bottom: 1px gray solid;
 }
-header .dropdown {
-  display: none;
-}
-@media screen and (max-width: 620px) {
-  header .dropdown {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 80%;
-  }
-}
-header .dropdown a {
-  background-color: white;
-  color: black;
-  font-size: 20px;
-  font-weight: 700;
-  border: white;
-}
-header .dropdown a:hover {
-  background-color: white;
-  color: red;
-}
-header .dropdown a:active {
-  background-color: white;
-  color: red;
-}
 header .logoYTitulo {
   display: flex;
   height: 100%;
   width: 20%;
 }
 header .logoYTitulo a {
+  align-self: center;
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 800;
-  padding-top: 3%;
 }
 header .logoYTitulo a:hover {
   color: red;
 }
 header .enlacesPrincipales {
   width: 80%;
-}
-@media screen and (max-width: 620px) {
-  header .enlacesPrincipales {
-    display: none;
-  }
 }
 header .enlacesPrincipales .menuDeEnlaces {
   height: 100%;
@@ -72,8 +54,7 @@ header .enlacesPrincipales .menuDeEnlaces {
   align-items: end;
 }
 header .enlacesPrincipales .menuDeEnlaces a {
-  align-self: center;
-  padding-top: 1%;
+  padding-top: 0.5%;
   text-decoration: none;
   color: black;
   font-size: 20px;
@@ -92,8 +73,48 @@ header .enlacesPrincipales .menuDeEnlaces a li img {
   width: 100%;
 }
 
-main {
+main .noticias {
+  margin-left: 12%;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  width: 75%;
+  column-gap: 20px;
+  row-gap: 10px;
+  justify-items: center;
+}
+main .noticias .noticia {
+  box-shadow: 1px 1px gray;
+  border-radius: 10px;
+}
+main .noticias .noticia img {
   width: 100%;
+  border-radius: 10px;
+}
+main .noticias #noticiaUno {
+  background-color: red;
+}
+main .noticias #noticiaDos {
+  background-color: gray;
+}
+main .noticias #noticiaTres {
+  background-color: blue;
+  width: 100%;
+  height: 80%;
+}
+main .noticias #noticiaTres img {
+  height: 60%;
+}
+main .noticias #noticiaCuatro {
+  background-color: rgb(144, 0, 255);
+  width: 100%;
+  height: 80%;
+}
+main .noticias #noticiaCuatro img {
+  height: 60%;
+}
+main .noticias h3 {
+  font-weight: 600;
+  color: white;
 }
 main h1 {
   text-align: center;
@@ -102,25 +123,6 @@ main h1 {
 }
 main h2 {
   font-weight: 700;
-}
-main .noticias {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: space-evenly;
-  gap: 20px 0px;
-}
-main .noticias .noticia {
-  display: flex;
-  flex-direction: column;
-  width: 20rem;
-  box-shadow: 1px 1px 5px 0px;
-  background-color: orange;
-}
-main .noticias .noticia img {
-  width: 100%;
-  height: 14rem;
-  background-color: white;
 }
 main .filaDeProductos {
   display: flex;
@@ -165,12 +167,11 @@ main .filaDeProductos .producto button:hover {
 
 footer {
   width: 100%;
-  height: 40%;
+  height: 30%;
   margin-top: 3rem;
   background-color: red;
 }
 footer .enlacesSecundarios {
-  width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -194,4 +195,4 @@ footer a {
   color: white;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */

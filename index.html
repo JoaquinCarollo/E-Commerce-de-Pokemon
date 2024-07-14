@@ -13,15 +13,6 @@
     <title>Inicio | PokeMart</title>
   </head>
   <body>
-    <div class="primeraImagen">
-      <a href="">
-        <img
-          src="recursos/International_Pokémon_logo.svg.png"
-          alt=""
-          class="imagenHeader"
-        />
-      </a>
-    </div>
     <header>
       <div class="logoYTitulo">
         <img src="recursos/icono.png" alt="pokebola" />
@@ -32,52 +23,68 @@
           <a href="">
             <li><img src="recursos/carrito.png" alt="carrito" /></li>
           </a>
-          <a href=""><li>Pokemones</li></a>
-          <a href=""><li>Items</li></a>
+          <a href="paginas/pokemones.html"><li>Pokemones</li></a>
+          <a href="paginas/items.html"><li>Items</li></a>
           <a href=""><li>Registrarse</li></a>
           <a href="paginas/iniciarSesion.html"><li>Iniciar Sesion</li></a>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Menú
+        </a>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="paginas/pokemones.html">Pokemones</a>
+          </li>
+          <li><a class="dropdown-item" href="paginas/items.html">Items</a></li>
+          <li><a class="dropdown-item" href="#">Registrarse</a></li>
+          <li>
+            <a class="dropdown-item" href="paginas/iniciarSesion.html"
+              >Iniciar Sesión</a
+            >
+          </li>
         </ul>
       </div>
     </header>
     <main>
       <h1 class="titulo">Bienvenido a PokeMart</h1>
+      <h2 class="subTitulo">
+        El mejor sitio web de comercio pokemon que existe
+      </h2>
       <h2>Noticias</h2>
       <section class="noticias">
-        <div class="noticia" id="noticiaUno">
-          <img src="recursos/lance.jpeg" alt="" />
-          <h3>¡Lance anuncia oficialmente su retiro!</h3>
+        <div class="noticia">
+          <img src="recursos/sucursalPokemon.webp" alt="" />
+          <h2>¡Comienza la Construcción de una Nueva Sucursal Pokémon!</h2>
           <p>
-            El campeón de Johto y ex-miembro del Alto Mando de Kanto anunció
-            esta mañana, frente a una conferencia de prensa, su retiro en la
-            competencia pokemón
+            Hoy marcó el inicio oficial de la construcción de la esperada
+            sucursal Pokémon en Ciudad Luminalia.
           </p>
         </div>
-        <div class="noticia" id="noticiaDos">
-          <img src="recursos/teamRocket.jpeg" alt="" />
-          <h3>Atrapan a un par de miembros del Team Rocket</h3>
+        <div class="noticia">
+          <img src="recursos/unMillon.png" alt="" />
+          <h2>¡Hemos superado el millon de usuarios pokemon!</h2>
           <p>
-            Esta mañana en las afueras del Bosque Verde, cerca de Ciudad
-            Plateada, la policia de Kanto encontró y atrapo a dos miembros del
-            Team Rocket que estaban llevando a cabo un robo de pokemones tipo
-            bicho
+            Despues de 2 años y medio en el mercado, finalmente nuestra
+            franquicia a superado el millón de usuarios registrados en nuestro
+            sitio web.
           </p>
         </div>
-        <div class="noticia" id="noticiaTres">
-          <img src="recursos/pokemones/eeveeShiny.jpeg" alt="" />
-          <h3>¡Eevee Shiny encontrado!</h3>
-          <p>
-            Ayer en la tarde encontraron un Eevee Shiny de color plateado, en
-            Ciudad Trigal, Johto. Nuestras fuentes indican que fue un entrenador
-            de 13 años llamado Colt, quien vive en pueblo primavera.
-          </p>
-        </div>
-        <div class="noticia" id="noticiaCuatro">
+        <div class="noticia">
           <img src="recursos/masterBall.jpeg" alt="" />
-          <h3>¡Ya hay fecha para las Masterballs!</h3>
+          <h2>¡Nuevo cargamento de Masterballs en camino!</h2>
           <p>
-            El presidente de Silph SA mando un comunicado al público en general
-            para informar oficialmente la fecha de producción y venta de las
-            Masterballs
+            Un nuevo cargamento repleto de Masterballs se dirigirá a nuestra
+            sucursal para el próximo mes. Se estima un total de 700 Masterballs
+            para la disponibilidad del consumidor.
           </p>
         </div>
       </section>
@@ -88,21 +95,21 @@
           <h4>Pikachu</h4>
           <p class="precioAnterior">5000P</p>
           <p>3500P</p>
-          <button id="botonAgregarCarrito1">Añadir al carrito</button>
+          <button>Añadir al carrito</button>
         </div>
         <div class="producto">
           <img src="recursos/items/ultraball.jpg" alt="ultraball" />
           <h4>Ultra Ball</h4>
           <p class="precioAnterior">1000P</p>
           <p>500P</p>
-          <button id="botonAgregarCarrito2">Añadir al carrito</button>
+          <button>Añadir al carrito</button>
         </div>
         <div class="producto">
           <img src="recursos/items/hiperpocion.png" alt="hiperpocion" />
           <h4>Hiperpoción</h4>
           <p class="precioAnterior">1200P</p>
           <p>700P</p>
-          <button id="botonAgregarCarrito3">Añadir al carrito</button>
+          <button>Añadir al carrito</button>
         </div>
         <div class="producto">
           <img
@@ -112,7 +119,7 @@
           <h4>Huevo Misterioso</h4>
           <p class="precioAnterior">2500P</p>
           <p>1700P</p>
-          <button id="botonAgregarCarrito4">Añadir al carrito</button>
+          <button>Añadir al carrito</button>
         </div>
       </div>
     </main>
@@ -123,7 +130,7 @@
             <h3>Contacto:</h3>
             <li>WhatsApp: 11-4455-1010</li>
             <li>Email: pokemart@gmail.com</li>
-            <li>Sucursal: Av. Corrientes 3254</li>
+            <li>Sucursal: Ciudad Trigal, Johto</li>
           </ul>
         </div>
         <div class="segundaColumna">
