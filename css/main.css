@@ -93,6 +93,7 @@ header .enlacesPrincipales .menuDeEnlaces a li img {
 }
 
 main {
+  background-color: rgb(213, 213, 213);
   width: 100%;
 }
 main h1 {
@@ -116,8 +117,10 @@ main .noticias .noticia {
   width: 20rem;
   box-shadow: 1px 1px 5px 0px;
   background-color: orange;
+  border-radius: 10px;
 }
 main .noticias .noticia img {
+  border-radius: 10px;
   width: 100%;
   height: 14rem;
   background-color: white;
@@ -130,6 +133,7 @@ main .filaDeProductos {
   gap: 20px;
 }
 main .filaDeProductos .producto {
+  background-color: white;
   width: 20rem;
   height: 22rem;
   box-shadow: 1px 1px 5px 0px;
@@ -166,7 +170,6 @@ main .filaDeProductos .producto button:hover {
 footer {
   width: 100%;
   height: 40%;
-  margin-top: 3rem;
   background-color: red;
 }
 footer .enlacesSecundarios {
