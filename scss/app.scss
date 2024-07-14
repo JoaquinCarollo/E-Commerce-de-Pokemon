@@ -1,197 +1,69 @@
-@mixin mobile {
-  @media screen and (max-width: 620px) {
-    @content;
-  }
-}
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.subTitulo {
-  text-align: center;
-  font-size: 25px;
-}
-header {
+@import "../css/layout/index.scss";
+
+@import "../css/layout/headerYFooter.scss";
+
+@import "../css/layout/general.scss";
+
+.pokemones {
   width: 100%;
-  height: 3rem;
-  display: flex;
-  border-bottom: 1px gray solid;
-  & .dropdown {
-    display: none;
-    @include mobile() {
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      width: 80%;
-    }
-    & a {
-      background-color: white;
-      color: black;
-      font-size: 20px;
-      font-weight: 700;
-      border: white;
-      &:hover {
-        background-color: white;
-        color: red;
+  & .buscadorFiltrosYProductos {
+    & .buscador {
+      padding-top: 2rem;
+      text-align: center;
+      & input {
+        border-radius: 10px;
+        width: 20%;
+        height: 2rem;
       }
-      &:active {
-        background-color: white;
-        color: red;
-      }
-    }
-  }
-  & .logoYTitulo {
-    display: flex;
-    height: 100%;
-    width: 20%;
-    & a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-      font-weight: 800;
-      padding-top: 3%;
-      &:hover {
-        color: red;
-      }
-    }
-  }
-  & .enlacesPrincipales {
-    width: 80%;
-    @include mobile() {
-      display: none;
-    }
-    & .menuDeEnlaces {
-      height: 100%;
-      display: flex;
-      justify-content: end;
-      align-items: end;
-      & a {
-        align-self: center;
-        padding-top: 1%;
-        text-decoration: none;
-        color: black;
+      & button {
+        border-radius: 7px;
         font-size: 20px;
-        font-weight: 700;
-        height: 100%;
-        border-left: 1px black solid;
+        background-color: white;
         &:hover {
-          color: red;
+          background-color: red;
+          color: white;
         }
-        & li {
-          align-self: center;
-          & img {
-            height: 100%;
-            width: 100%;
+      }
+    }
+    & .filtrosYProductos {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      justify-items: center;
+      margin-top: 2rem;
+      & .filtros {
+        & button {
+          width: 25rem;
+          border-radius: 7px;
+          font-size: 20px;
+          background-color: white;
+        }
+      }
+      & .productos {
+        & table {
+          & tr {
+            display: grid;
+            grid-template-columns: repeat(6, 2fr);
+            & td {
+              width: 100%;
+              border: 1px black solid;
+              background-color: white;
+              padding-right: 1rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              & img {
+                width: 100%;
+                height: 100%;
+              }
+              & button {
+                justify-self: center;
+                height: 50%;
+                width: 100%;
+              }
+            }
           }
         }
       }
     }
-  }
-}
-main {
-  background-color: rgb(213, 213, 213);
-  width: 100%;
-  & h1 {
-    text-align: center;
-    font-size: 40px;
-    font-weight: 800;
-  }
-  & h2 {
-    font-weight: 700;
-  }
-  & .noticias {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-evenly;
-    gap: 20px 0px;
-    & .noticia {
-      display: flex;
-      flex-direction: column;
-      width: 20rem;
-      box-shadow: 1px 1px 5px 0px;
-      background-color: orange;
-      border-radius: 10px;
-      & img {
-        border-radius: 10px;
-        width: 100%;
-        height: 14rem;
-        background-color: white;
-      }
-    }
-  }
-  & .filaDeProductos {
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
-    & .producto {
-      background-color: white;
-      width: 20rem;
-      height: 22rem;
-      box-shadow: 1px 1px 5px 0px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      & img {
-        width: 12rem;
-        height: 12rem;
-      }
-      & p {
-        font-weight: 590;
-      }
-      & .precioAnterior {
-        text-decoration: line-through;
-      }
-      & button {
-        border-radius: 10px;
-        border: none;
-        height: 2.5rem;
-        width: 10rem;
-        color: white;
-        background-color: rgb(0, 172, 0);
-        transition: background-color 0.2s;
-        &:hover {
-          background-color: white;
-          color: rgb(0, 172, 0);
-          border: 1px solid rgb(0, 172, 0);
-        }
-      }
-    }
-  }
-}
-footer {
-  width: 100%;
-  height: 40%;
-  background-color: red;
-  & .enlacesSecundarios {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    & ul {
-      font-size: 20px;
-      & h3 {
-        font-weight: 600;
-        color: white;
-      }
-      & a {
-        &:hover {
-          color: black;
-        }
-      }
-      & li {
-        color: white;
-      }
-    }
-  }
-  & a {
-    text-decoration: none;
-    color: white;
   }
 }
