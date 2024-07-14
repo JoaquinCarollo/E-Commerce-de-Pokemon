@@ -1,117 +1,11 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.subTitulo {
-  text-align: center;
-  font-size: 25px;
-}
-
-header {
-  width: 100%;
-  height: 3rem;
-  display: flex;
-  border-bottom: 1px gray solid;
-}
-header .dropdown {
-  display: none;
-}
-@media screen and (max-width: 620px) {
-  header .dropdown {
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 80%;
-  }
-}
-header .dropdown a {
-  background-color: white;
-  color: black;
-  font-size: 20px;
-  font-weight: 700;
-  border: white;
-}
-header .dropdown a:hover {
-  background-color: white;
-  color: red;
-}
-header .dropdown a:active {
-  background-color: white;
-  color: red;
-}
-header .logoYTitulo {
-  display: flex;
-  height: 100%;
-  width: 20%;
-}
-header .logoYTitulo a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: 800;
-  padding-top: 3%;
-}
-header .logoYTitulo a:hover {
-  color: red;
-}
-header .enlacesPrincipales {
-  width: 80%;
-}
-@media screen and (max-width: 620px) {
-  header .enlacesPrincipales {
-    display: none;
-  }
-}
-header .enlacesPrincipales .menuDeEnlaces {
-  height: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-header .enlacesPrincipales .menuDeEnlaces a {
-  align-self: center;
-  padding-top: 1%;
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: 700;
-  height: 100%;
-  border-left: 1px black solid;
-}
-header .enlacesPrincipales .menuDeEnlaces a:hover {
-  color: red;
-}
-header .enlacesPrincipales .menuDeEnlaces a li {
-  align-self: center;
-}
-header .enlacesPrincipales .menuDeEnlaces a li img {
-  height: 100%;
-  width: 100%;
-}
-
-main {
-  background-color: rgb(213, 213, 213);
-  width: 100%;
-}
-main h1 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 800;
-}
-main h2 {
-  font-weight: 700;
-}
-main .noticias {
+.inicio .noticias {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-evenly;
   gap: 20px 0px;
 }
-main .noticias .noticia {
+.inicio .noticias .noticia {
   display: flex;
   flex-direction: column;
   width: 20rem;
@@ -119,20 +13,20 @@ main .noticias .noticia {
   background-color: orange;
   border-radius: 10px;
 }
-main .noticias .noticia img {
+.inicio .noticias .noticia img {
   border-radius: 10px;
   width: 100%;
   height: 14rem;
   background-color: white;
 }
-main .filaDeProductos {
+.inicio .filaDeProductos {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
 }
-main .filaDeProductos .producto {
+.inicio .filaDeProductos .producto {
   background-color: white;
   width: 20rem;
   height: 22rem;
@@ -142,17 +36,17 @@ main .filaDeProductos .producto {
   flex-direction: column;
   align-items: center;
 }
-main .filaDeProductos .producto img {
+.inicio .filaDeProductos .producto img {
   width: 12rem;
   height: 12rem;
 }
-main .filaDeProductos .producto p {
+.inicio .filaDeProductos .producto p {
   font-weight: 590;
 }
-main .filaDeProductos .producto .precioAnterior {
+.inicio .filaDeProductos .producto .precioAnterior {
   text-decoration: line-through;
 }
-main .filaDeProductos .producto button {
+.inicio .filaDeProductos .producto button {
   border-radius: 10px;
   border: none;
   height: 2.5rem;
@@ -161,40 +55,10 @@ main .filaDeProductos .producto button {
   background-color: rgb(0, 172, 0);
   transition: background-color 0.2s;
 }
-main .filaDeProductos .producto button:hover {
+.inicio .filaDeProductos .producto button:hover {
   background-color: white;
   color: rgb(0, 172, 0);
   border: 1px solid rgb(0, 172, 0);
-}
-
-footer {
-  width: 100%;
-  height: 40%;
-  background-color: red;
-}
-footer .enlacesSecundarios {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-footer .enlacesSecundarios ul {
-  font-size: 20px;
-}
-footer .enlacesSecundarios ul h3 {
-  font-weight: 600;
-  color: white;
-}
-footer .enlacesSecundarios ul a:hover {
-  color: black;
-}
-footer .enlacesSecundarios ul li {
-  color: white;
-}
-footer a {
-  text-decoration: none;
-  color: white;
 }
 
 header {
@@ -366,6 +230,14 @@ main h2 {
   border-radius: 7px;
   font-size: 20px;
   background-color: white;
+}
+.pokemones .buscadorFiltrosYProductos .filtrosYProductos .filtros #listaDeFiltrosPokemones {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-radius: 7px;
 }
 .pokemones .buscadorFiltrosYProductos .filtrosYProductos .productos table tr {
   display: grid;

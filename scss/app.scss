@@ -1,3 +1,8 @@
+@mixin mobile {
+  @media screen and (max-width: 620px) {
+    @content;
+  }
+}
 @import "../css/layout/index.scss";
 
 @import "../css/layout/headerYFooter.scss";
@@ -36,6 +41,14 @@
           border-radius: 7px;
           font-size: 20px;
           background-color: white;
+        }
+        & #listaDeFiltrosPokemones {
+          display: flex;
+          justify-content: space-evenly;
+          background-color: white;
+          border-left: 1px black solid;
+          border-right: 1px black solid;
+          border-radius: 7px;
         }
       }
       & .productos {
