@@ -3,11 +3,11 @@
     @content;
   }
 }
-@import "../css/layout/index.scss";
+@import "../css/layout/general.scss";
 
 @import "../css/layout/headerYFooter.scss";
 
-@import "../css/layout/general.scss";
+@import "../css/layout/index.scss";
 
 .pokemones {
   width: 100%;
