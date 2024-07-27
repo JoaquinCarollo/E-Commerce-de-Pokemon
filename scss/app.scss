@@ -8,6 +8,22 @@
 @import "../css/layout/headerYFooter.scss";
 
 @import "../css/layout/index.scss";
+.iniciarSesion {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 5rem 0;
+  & form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid black;
+    border-radius: 10px;
+    width: 30%;
+    height: 28rem;
+  }
+}
 
 .pokemones {
   width: 100%;

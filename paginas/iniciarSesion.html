@@ -8,6 +8,12 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="../css/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <title>Iniciar Sesion | PokeMart</title>
   </head>
   <body>
@@ -18,18 +24,70 @@
       </div>
       <div class="enlacesPrincipales">
         <ul class="menuDeEnlaces">
-          <a href=""
-            ><li><img src="../recursos/carrito.png" alt="carrito" /></li
-          ></a>
-          <a href=""><li>Pokemones</li></a>
-          <a href=""><li>Items</li></a>
+          <a href="">
+            <li><img src="../recursos/carrito.png" alt="carrito" /></li>
+          </a>
+          <a href="pokemones.html"><li>Pokemones</li></a>
+          <a href="items.html"><li>Items</li></a>
           <a href=""><li>Registrarse</li></a>
           <a href="iniciarSesion.html"><li>Iniciar Sesion</li></a>
         </ul>
       </div>
+      <div class="dropdown">
+        <a
+          class="btn btn-secondary dropdown-toggle"
+          href="#"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Menú
+        </a>
+
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="pokemones.html">Carrito</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="pokemones.html">Pokemones</a>
+          </li>
+          <li><a class="dropdown-item" href="items.html">Items</a></li>
+          <li><a class="dropdown-item" href="#">Registrarse</a></li>
+          <li>
+            <a class="dropdown-item" href="iniciarSesion.html"
+              >Iniciar Sesión</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
-    <main>
-      <h1>Iniciar Sesion</h1>
+    <main class="iniciarSesion">
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Iniciar</button>
+      </form>
     </main>
     <footer>
       <section class="enlacesSecundarios">
@@ -59,5 +117,10 @@
         </div>
       </section>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
